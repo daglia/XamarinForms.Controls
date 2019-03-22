@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamarinForms.Controls.Views.AnaSayfa">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label x:Name="lblMesaj"
+               BackgroundColor="Tomato"
+               Text="Click the Button below"
+               FontSize="Large"
+               VerticalOptions="CenterAndExpand"
+               HorizontalOptions="Center" />
+
+            <Button x:Name="btnDondur" Text="Click to Rotate Text!"
+                VerticalOptions="CenterAndExpand"
+                HorizontalOptions="Center"/>
+            <DatePicker
+                x:Name="dtpTarih"
+                VerticalOptions="CenterAndExpand"
+                HorizontalOptions="Center"
+                />
+            <TimePicker
+                x:Name="dtpSaat"
+                Format="T"
+                VerticalOptions="CenterAndExpand"
+                HorizontalOptions="Center"
+            />
+            <Picker x:Name="cmbKisiler"
+                    Title="Kişi Seçiniz"
+                    ItemsSource="{Binding Kullanicilar}">
+            </Picker>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

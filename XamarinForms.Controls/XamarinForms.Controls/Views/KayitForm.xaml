@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamarinForms.Controls.Views.KayitForm">
+    <ContentPage.Content>
+        <Grid 
+            VerticalOptions="Start" 
+            HorizontalOptions ="Center"
+            Margin="50">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*" />
+                <ColumnDefinition Width="2*" />
+            </Grid.ColumnDefinitions>
+            <Label 
+                Text="Ad" Grid.Row="0" Grid.Column="0" VerticalTextAlignment="Center" />
+            <Entry x:Name="txtAd"
+                WidthRequest="200" Placeholder="Ad" Grid.Row="0" Grid.Column="1"
+                Keyboard="Text" ReturnType="Next"/>
+            <Label 
+                Text="Soyad" Grid.Row="1" Grid.Column="0" VerticalTextAlignment = "Center"/>
+            <Entry x:Name="txtSoyad"
+                WidthRequest="200" Placeholder="Soyad" Grid.Row="1" Grid.Column="1"
+                Keyboard="Text" ReturnType="Next"/>
+            <Label 
+                Text="Email" Grid.Row="2" Grid.Column="0" VerticalTextAlignment = "Center"/>
+            <Entry x:Name="txtEmail"
+                WidthRequest="200" Placeholder="Email" Grid.Row="2" Grid.Column="1"
+                Keyboard="Email" ReturnType="Next"/>
+            <Label 
+                Text="Şifre" Grid.Row="3" Grid.Column="0" VerticalTextAlignment = "Center"/>
+            <Entry x:Name="txtPass"
+                WidthRequest="200" Placeholder="Şifre" Grid.Row="3" Grid.Column="1"
+                Keyboard="Numeric" IsPassword="True" ReturnType="Done"/>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
